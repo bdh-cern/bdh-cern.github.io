@@ -1,0 +1,26 @@
+
+- CTSB Long term strategy for controls
+- Michael presenting EPA overview at Chamonix
+- DBS only been present in PS since 2025 as part of EPA
+	- Beam-time sharing improvement
+	- Efficient LHC filling
+	- 2026: Autonomous SC scheduling and execution; DBS can recalculate and activate new SC (rather than populating the same SC under given constraints) - how is this different?
+	- ~52 SC changes per day, 2-25min -> seconds
+- Automated LHC filling
+	- Automate mode switching and beam prep 
+	- 'Building blocks' including wire-scans, LBO, TL steering (?)
+	- Automated corrective trims 
+	- Definition of beam quality and quality constraints
+- Automatic parameter optimisation
+	- Optimisers deployed amongst injectors
+	- More experience in 2026
+	- Investigation of ML optimisers
+- Hysteresis compensation
+	- 36h operational test in 2025
+	- 4.6 GWh/yr (300 kCHF) saving per year purely from depowering MD1 (26GeV) for 2,4-poles
+	- Only SFTPRO uses MD1 (?)
+		- MD1 is the only one to degauss dipoles (and quadrupoles?)
+		- In TT2 all 6,8-poles are degaussed before every transfer
+	- Multi-function magnets studied in lab this year
+- Autonomous equipment
+	- AqFlow for 'pilots'?
