@@ -15,8 +15,8 @@
 CAS:
 - 9th-13th March
 
-Michael:
-- 13th-20th March (?)
+Michael's visit:
+- 13th-19th March
 
 Skiing holiday: 
 - Vordergottschallalm

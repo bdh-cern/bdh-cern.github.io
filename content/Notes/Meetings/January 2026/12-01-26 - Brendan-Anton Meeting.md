@@ -11,7 +11,7 @@
 - Chroma stuff: we don't know why the chroma changes after switching to RMD1.  If the $\Delta\xi$ is consistent, then we can mitigate it with settings.
 ## Goals
 
-- We need to see if the chroma change $\Delta\xi$ from switch to [[RMD1]] is consistent across different supercycles
+- We need to see if the chroma change $\Delta\xi$ from switch to [[Depowered MD1]] is consistent across different supercycles
 	- This will let us know if we can correct it using settings tag, or if something more complex is needed
 - Adopt a low priority for static effects
 	- However, further work on this new, simpler method of Anton's is interesting
@@ -25,7 +25,7 @@
 	- Especially important to verify untested framework to run this live
 - Investigation of Anton's new, simpler scheme (could be deployed on Geoff). Possible development of this by me.
 - In general, work with magnets lab to resolve the discrepancy in the machine vs lab eddies.
-	- Eddies are low-priority because they are not needed for switch to [[RMD1]]
+	- Eddies are low-priority because they are not needed for switch to [[Depowered MD1]]
 
 # Meeting notes
 
