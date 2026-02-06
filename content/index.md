@@ -1,3 +1,13 @@
+
+# Quick Links
+
+Details of the cancelled December MD: [[01-12-25 MD - Cancelled Chroma Scans]]
+Guide to using Anton's app: [[Hysteresis App]]
+Schedule for 2026: [[Schedule 2026]]
+Reference for the SPS: [[SPS| SPS reference]]
+Reference for the B-train: [[B-train | B-train reference]]
+Glossary: [[Glossary]]
+
 # This Project
 
 This project aims to reduce the effect of hysteresis in CERN's accelerators as part of Work Package 4 of the Efficient Particle Accelerator project.

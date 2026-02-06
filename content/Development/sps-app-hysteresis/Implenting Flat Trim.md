@@ -35,11 +35,10 @@ Ultimately probably need a Trim interface which both pointwise and fixed impleme
 	- The orchestrator is then started in `_standalone.start()` which only calls `self._orchestrator.start()`
 		- The latter method iterates over builders and start them
 
+
 # Changes
 
-- Renamed Trim to PointwiseTrim
-- Duplicated this and renamed new to FixedTrim
-
+To come
 
 ## ToDo:
 

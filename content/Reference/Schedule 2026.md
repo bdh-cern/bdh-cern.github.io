@@ -9,6 +9,7 @@
 
 # Personal Schedule:
 
+Beam Commissioning
 - Testing the app on 11th and 12th (Wed, Thurs)
 - Taking the new chroma data on 17th, 18th (Tues, Wed)
 
@@ -16,7 +17,10 @@ CAS:
 - 9th-13th March
 
 Michael's visit:
-- 13th-19th March
+- 10th-19th March
+
+Matt, Amber Visit:
+- 16th - 20th March
 
 Skiing holiday: 
 - Vordergottschallalm

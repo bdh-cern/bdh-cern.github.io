@@ -23,3 +23,5 @@ File "pyarrow/_dataset.pyx", line 1477, in pyarrow._dataset.Fragment.physical_sc
 ... makes me think that the LBL fails, this isn't accounted for, then the buffer pyarrow is trying to read here is actually just a 404 rather than a valid parquet, causing this issue.
 
 **21-01-26:** SPS login-by-location is used for the hysteresis app, even though the VPC is not based in the SPS island. Need to change the app to use explicit RBAC.
+
+Changed the authentication to explicit RBAC, and I can now use it. Not sure if authentication works for sending trims as they do not actually seem to fire due to UCAP issues.
