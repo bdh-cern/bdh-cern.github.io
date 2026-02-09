@@ -38,11 +38,32 @@ Ultimately probably need a Trim interface which both pointwise and fixed impleme
 
 # Changes
 
-To come
+Changed the context given to `_lsa.set` from:
 
-## ToDo:
+```
+            # context=LsaCycleContext(
+            #     cycle=cycle,
+            #     comment=comment,
+            #     flags=TrimFlags(
+            #         transient=True,
+            #         drive=context.lsa_server not in {"next", "dev"},
+            #         propagate_to_children=context.lsa_server not in {"next", "dev"},
+            #     ),
+            # ),
+```
 
-- [ ] Set up a launch.json and enable debugging
-- [ ] Work out how to use pre-commit remotely
-- [ ] Work out the best way to structure the trims
-	- [ ] First point of order here: figure out at which level **this program** implements the trimming logic. E.g. if the difference is just sending a 0 or 1 to LSA for flat/not flat, then we probably don't need an interface. If it's more complicated, we might need an interface or some switch statements
+to 
+
+```
+ context = pyda_lsa.LsaIncorporationContext(
+                cycle=cycle,
+                cycle_time=6000.0, # change to trim start time I think
+                flags=pyda_lsa.TrimFlags(
+                    relative=True,
+                    transient=True,
+                    drive=context.lsa_server not in {"next", "dev"},
+                    propagate_to_children=context.lsa_server not in {"next", "dev"},
+                ),
+```
+
+which is now using this new LsaIncorporationContext from the newest version of pyDA_lsa. The only difference between it and the old LsaCycleContext is that it stores the cycle time which I guess points towards the BP and thus the incorporation rule.

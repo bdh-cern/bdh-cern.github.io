@@ -23,8 +23,15 @@
 		- BHYS---->I
 		- ... such that B and BHYS are combined to give I
 	- Why does it work for the chroma? 
+	- BHYS has a make rule which goes directly to I, but other quantities have one that influences K first. Why?
 	- Core question: how do we make BHYS an additive quantity that adds to the I which is set by B?
 	- What is a knob/knob make rule
+
+- When trimming BHYS start of flattop BP, need to make sure that there is a node with value 0 in the previous BP from which to linearly interpolate up to positive value of BHYS
+	- This can't be too fast or the make rule for IMAINs will fail
+	- 20ms before trim is sufficient 
+
+- We think that it's fine to trim correction. Doesn't seem to make a difference to what we want to do at the moment.
 
 - Currently BHYS is 'B with corrections for hysteresis'. But rather it should be 'the correction on top of B to account for hysteresis'
 - How do I get on to NEXT?: CCM->CO->Lsa next
@@ -34,3 +41,6 @@ Existing make structure for chromaticity is what we roughly want to replicate:
 
 ![[Pasted image 20260206141152.png]]
 
+Incorporation rule (highlighted):
+
+![[Pasted image 20260206152904.png]]
