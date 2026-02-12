@@ -1,0 +1,30 @@
+- `_add_measurement_ref`: not critical, only for plotting, apparently only adds the reference 
+- `_add_measurement_post`:  after the measurement is published, adds the measurement to the right place in the buffer (cycledata) so it can be used for future predictions
+- `_add_measurement_pre`: maintains the buffer by filling in future cycles which do not yet have data with previous measurements of those cycles
+- pretty much every 'EventBuilder' is updating the cycledata in some way, or doing some processing
+- TrackFULLECO - not used currently (but full eco is when the magnets are left completely idle)
+- TrackDYNECO - this is needed because the programmed current will not actually match the dynamic economy. This updates the buffer to say 'hang on, this cycle wasn't actually programmed current, it was in DynEco'
+	- If there is a DynEco, there is no correction made or applied
+- Measured current isn't currently used to predict anything, only plotting
+- Programmed current is actually used for prediction
+- 1.7 seconds warning for sending trim
+- DynEco warning is about 200ms after cycle start
+- AddProgrammed waits for your correction so it can add the COMPLETE programmed current (i.e. original programmed + your programmed correction)
+- The prediction is made based on the measured field and the programmed current
+	- There is also an option to use the measured current, but not on by defaults
+	- Autoregressive mode uses the predicted field as the measured field
+- No data for XTIM.SX.APECO-CT is normal because it only plays on dynamic eco
+- 'WRT' = white rabbit timing
+- XTIM.SX.SCY-CT is the correct timing device
+- XTIM_SPS device class is for SPS timing device
+- Make sure **not** to use the most recent merge in sps-ucap-hysteresis-compensation as this is after the major refactor and does not match the version currently on the UCAP node
+- Calibration:
+	- UCAP.I2B.CALIBRATION,  UCAP.I2BDOT.CALIBRATION
+	- This is the I->B transfer function 'without hysteresis' which is an arbitrary choice because the magnet will always have some sort of history
+	- As long as e.g. LSA and our UCAP nodes have the same calibration function, things will work out
+	- During correction, we need to add out $\Delta B$ to the 'non-hysteretic' $B$
+- BDOT in LSA ends at beam out, so Anton has to calculate $\dot B$ from IREF during the rampdown
+	- This is why there needs to be a UCAP node publishing BDOT rather than just getting everything from NXCALS
+- CSS responsible for timing devices, CCDE, LSA, UCAP etc
+ 
+ ![[Pasted image 20260212110858.png]]

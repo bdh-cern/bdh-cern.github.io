@@ -1,4 +1,4 @@
-# General Notes
+	# General Notes
 
 - The SPS typically uses beam/injection time (not cycle time)
 # Energy/Momentum Points
@@ -15,7 +15,8 @@ LHC injection: 26 GeV
 | Slip factor (14GeV)            | $\eta$      | 0.002614964637129285  |      |      |
 | Slip factor (26GeV)            | $\eta$      | 0.0005533576515251234 |      |      |
 | Standard  revolution frequency | $F_{rev,0}$ | ~43.279               | kHz  |      |
-|                                |             |                       |      |      |
+| Idle Current                   |             | 155                   | A    |      |
+| Injection Current              |             | 300                   | A    |      |
 
 # Useful Variables
 
@@ -23,7 +24,7 @@ LHC injection: 26 GeV
 | Description          | Variable name                               | Notes                                                            |
 | -------------------- | ------------------------------------------- | ---------------------------------------------------------------- |
 | B field              | SR.BMEAS-OP-B-SD:SamplesFromTrigger:samples |                                                                  |
-| Programmed I         | QD.LOG.I.REF                                | Measured I is not logged.<br>Can't actually find this on timber. |
+| Programmed I         | RPPEL.BA3.MBI:LOG.I.REF                     | Measured I is not logged.<br>Can't actually find this on timber. |
 | Revolution frequency | SA.RevFreq.ACQ-D                            |                                                                  |
 
 # Control

@@ -1,3 +1,11 @@
+# Main things
+
+- How can we correctly categorise BHYS under the BHYS parameter type?
+- How can we change the make rule structure such that B BHYS are used additively to calculate I
+	- A similar structure is already used to calculate QF mains from multiple additive sources 
+- Why does the tune control run through K, whilst the B (or BHYS) control does not?
+
+# Meeting notes
 
 - Incorporation rule: how to incorporate a new value into existing LSA settings
 	- Defined by BP and parameter type
@@ -36,6 +44,9 @@
 - Currently BHYS is 'B with corrections for hysteresis'. But rather it should be 'the correction on top of B to account for hysteresis'
 - How do I get on to NEXT?: CCM->CO->Lsa next
 - How do I get to the parameter type application? -> Link from Michael
+
+
+# Figures
 
 Existing make structure for chromaticity is what we roughly want to replicate: 
 

@@ -1,10 +1,14 @@
 - [ ] Show selected model checkpoint name in main window
 - [x] Remove useless Enable Prediction button in main window
+- [ ] Display BHYS on a rolling plot
+- [ ] Stop predicting eddies by default
 - [ ] Allow running without specification of logdir
 - [ ] After loading a checkpoint, give some indicator that predictions will start soon
 - [ ] Add LSA mode (LSA or next) to the main page
 - [ ] The expand/collapse button shows the wrong icon. Should point down when collapsed and up when expanded.
-- [ ] Why is load model disabled when using --online?
+- [x] Why is load model disabled when using --online?
+	- Presumably because the model is set on UCAP.
+	- [ ] Allow changing prediction model from GUI?
 - [ ] Need a warning for when the SC changes or a trim which invalidates the predition is applied.
 - [ ] Remove random red on/off button
 - [ ] Maths symbols on plots etc.
