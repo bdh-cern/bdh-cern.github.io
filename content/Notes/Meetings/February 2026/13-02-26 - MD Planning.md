@@ -35,3 +35,30 @@ Key:
 - MD1 is 3BP
 - MD cycles have been reduced to 4BP (from 6BP)
 - How is chroma of the ramp effected? Can possibly measure on the initial part of the ramp
+- Start from the aperture cycle that the SPS is currently using but on the cycle name SFT_PRO_MD_aperture_2025_V3
+
+Plan: 
+
+- On the weekend:
+- Prepare SFT_PRO_MD_aperture_2025_V3, with 19-11 tag ('200GeV MD1') , verify damper is off
+- Copy settings from SFT_PRO_MD_aperture_2025_V3 : Energy matching, Orbit correction, Check the tune, Rf injection phases, Stable phase offset
+- Measure in two configurations:
+	- LHCINDIV - MD1 - SFT_PRO_MD_aperture_2025_V3
+	- SFTPRO - MD1 - SFT_PRO_MD_aperture_2025_V3
+- Chroma measurement configs:
+	- Aim for +- 6e-3 dp/p with step 0.5e-3 and 3 shots per point
+	- Measurement along flat-bottom to beyond transition (aim for beyond 50GeV)
+
+For next week:
+
+- Redo one of the weekend measurements (LHCINDIV - MD1 - SFT_PRO_MD_aperture_2025_V3 or SFTPRO - MD1 - SFT_PRO_MD_aperture_2025_V3)
+- Then:
+	- SFTPRO - flat 26GeV MD1 - SFT_PRO_MD_aperture_2025_V3
+	- LHCINDIV - flat 26GeV MD1 - SFT_PRO_MD_aperture_2025_V3
+	- (All flat on 2,4,6,8-poles)
+- Establish settings set to switch between with 200 GeV MD1/flat 26 GeV  MD1 on SFT_PRO_MD_aperture_2025_V3 to recover linear chroma in beam domain, then repeat - work out which settings need to be changed
+- Repeat:
+	- SFTPRO - flat 26GeV MD1 - SFT_PRO_MD_aperture_2025_V3
+	- LHCINDIV - flat 26GeV MD1 - SFT_PRO_MD_aperture_2025_V3
+	- (All flat on 2,4,6,8-poles)
+- ...to make sure chromaticity has been restored.
