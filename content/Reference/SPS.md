@@ -9,14 +9,15 @@ SFTPRO injection: 14 GeV
 LHC injection: 26 GeV
 # Constants
 
-| Variable                       | Symbol      | Value                 | Unit | Note |
-| ------------------------------ | ----------- | --------------------- | ---- | ---- |
-| Momentum compaction            | $\alpha$    | 0.001853974296        |      |      |
-| Slip factor (14GeV)            | $\eta$      | 0.002614964637129285  |      |      |
-| Slip factor (26GeV)            | $\eta$      | 0.0005533576515251234 |      |      |
-| Standard  revolution frequency | $F_{rev,0}$ | ~43.279               | kHz  |      |
-| Idle Current                   |             | 155                   | A    |      |
-| Injection Current              |             | 300                   | A    |      |
+| Variable                       | Symbol      | Value                 | Unit | Note    |
+| ------------------------------ | ----------- | --------------------- | ---- | ------- |
+| Momentum compaction            | $\alpha$    | 0.001853974296        |      |         |
+| Slip factor (14GeV)            | $\eta$      | 0.002614964637129285  |      |         |
+| Slip factor (26GeV)            | $\eta$      | 0.0005533576515251234 |      |         |
+| Standard  revolution frequency | $F_{rev,0}$ | 43279                 | kHz  | Approx. |
+| Idle Current                   |             | 155                   | A    |         |
+| Injection Current              |             | 300                   | A    |         |
+
 
 # Useful Variables
 

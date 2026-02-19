@@ -1,11 +1,14 @@
 
-| Date       | 19th November 2025          |
-| ---------- | --------------------------- |
-| Start time | 17:00 + 01:00               |
-| End time   | 17:30 + 01:00               |
-| User       | MD4 (check)                 |
-| LSA cycle  | SFT_PRO_MD_aperture_2025_V3 |
-| Purpose    | Chroma analysis             |
+| Date              | 2025-11-19                  |
+| ----------------- | --------------------------- |
+| MD1 on start      | 17:00:00.000+01:00          |
+| MD1 on end        | 17:11:00.000+01:00          |
+| MD1 off start     | 17:20:20.000+01:00          |
+| MD1 off end       | 17:30:00.000+01:00          |
+| User              | MD4 (check)                 |
+| Measurement cycle | SFT_PRO_MD_aperture_2025_V3 |
+| Purpose           | Chroma analysis             |
+|                   |                             |
 
 
 Messy MD which suffered from technical issues. Did a chroma sweep with MD1 on and another with MD1 off (off on both dipoles and quadrupoles). Some good results retrieved.
@@ -13,6 +16,11 @@ Messy MD which suffered from technical issues. Did a chroma sweep with MD1 on an
 When MD1 was off, 'full' zeros were played, i.e idle current on 2,4,6,8-poles ([[12-01-26 - Brendan-Anton Meeting]]). This was not ideal as usually RMD1 usually includes pulses on 6,8-poles. Nonetheless it shouldn't have caused much of an issue.
 
 [Link to Anton's notes](https://quartz.haochen.lu/02-Areas/MDs/Dedicated-MD-2025-11-19)
+
+# Plots
+
+![[Pasted image 20260213135935.png]]
+![[Pasted image 20260213135939.png]]
 
 # Dp/p measurements
 

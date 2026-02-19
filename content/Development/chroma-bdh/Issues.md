@@ -1,0 +1,2 @@
+- Find out the measurement rate of whatever measures $F_{rev}$ , then replace the dpp_start_index with dpp_start_time in the settings (same for dpp_end_index)
+- Functionality to remove cycles if no beam was played

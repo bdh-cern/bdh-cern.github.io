@@ -19,6 +19,9 @@ MD1 was turned off on the dipoles only. On 4,6,8-pole, the normal MD1 was played
 | f0 start index          | 4     |
 | f0 end index            | 8     |
 
+# Plots
+![[Pasted image 20260213135917.png]]
+![[Pasted image 20260213135911.png]]
 
 # Scan with MD1 Off
 
